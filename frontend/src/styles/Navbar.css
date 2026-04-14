@@ -1,0 +1,32 @@
+.navbar {
+    margin: 10px;
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background: #1e293b;
+    color: white;
+    border-radius: 12px;
+}
+
+.navbar-logo-text {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-icon {
+    cursor: pointer;
+}
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+}

@@ -9,7 +9,7 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 DEBUG = False
-SECRET_KEY = os.environ.get['SECRET_KEY']
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

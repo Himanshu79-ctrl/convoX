@@ -2,12 +2,16 @@ import axios from 'axios';
 import { ACCESS_TOKEN } from './token';
 
 
-const apiUrl = "/choreo-apis/awbo/backend/rest-api-be2/v1.0";
+const isDevelopment = import.meta.env.MODE === "development";
+
+const myBaseUrl = isDevelopment
+  ? import.meta.env.VITE_API_URL
+  : import.meta.env.VITE_API_BASE_URL_DEPLOY;
+
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiUrl,
-})
-
+  baseURL: myBaseUrl,
+});
 
 api.interceptors.request.use(
   (config) => {

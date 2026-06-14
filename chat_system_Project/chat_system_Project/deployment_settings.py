@@ -26,7 +26,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:5173",
-    "https://convox-i97w.onrender.com/chat"
+    "https://convox-1-0l8s.onrender.com"
 ]
 
 STORAGES={
